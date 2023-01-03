@@ -1,12 +1,13 @@
 import React from 'react';
 
 export default function Task({task, handleTaskState, deleteTask}) {
+
     function handleTaskClick() {
         handleTaskState(task.id)
     }
 
     function deleteBtn() {
-            deleteTask(task.id)
+        deleteTask(task.id);
     }
 
     return (
